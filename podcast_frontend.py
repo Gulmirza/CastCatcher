@@ -47,7 +47,7 @@ def main():
                 st.write(podcast_info['podcast_guest']['name'])
             else:
                 st.write("Guest name not found.")
-                st.write(podcast_info)  # Debugging: Print the content of the variable
+                #st.write(podcast_info)  # Debugging: Print the content of the variable
 
         with col4:
             st.subheader("Podcast Guest Details")
@@ -56,7 +56,7 @@ def main():
                 st.write(podcast_info['podcast_guest']['summary'])
             else:
                 st.write("Guest summary not found.")
-                st.write(podcast_info)  # Debugging: Print the content of the variable
+                #st.write(podcast_info)  # Debugging: Print the content of the variable
 
         # Display the five key moments
         st.subheader("Key Moments")
