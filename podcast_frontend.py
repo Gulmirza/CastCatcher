@@ -51,7 +51,12 @@ def main():
 
         with col4:
             st.subheader("Podcast Guest Details")
-            st.write(podcast_info["podcast_guest"]['summary'])
+            # st.write(podcast_info["podcast_guest"]['summary'])
+            if 'podcast_guest' in podcast_info and 'summary' in podcast_info['podcast_guest']:
+                st.write(podcast_info['podcast_guest']['summary'])
+            else:
+                st.write("Guest summary not found.")
+                st.write(podcast_info)  # Debugging: Print the content of the variable
 
         # Display the five key moments
         st.subheader("Key Moments")
