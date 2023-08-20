@@ -44,7 +44,7 @@ def main():
             st.subheader("Podcast Guest")
             # st.write(podcast_info['podcast_guest']['name'])
             if 'podcast_guest' in podcast_info and 'name' in podcast_info['podcast_guest']:
-                st.write(podcast_info['podcast_guest']['name'])
+                st.write(podcast_info['podcast_guest']['guest_name'])
             else:
                 st.write("Guest name not found.")
                 #st.write(podcast_info)  # Debugging: Print the content of the variable
@@ -53,7 +53,7 @@ def main():
             st.subheader("Podcast Guest Details")
             # st.write(podcast_info["podcast_guest"]['summary'])
             if 'podcast_guest' in podcast_info and 'summary' in podcast_info['podcast_guest']:
-                st.write(podcast_info['podcast_guest']['summary'])
+                st.write(podcast_info['podcast_guest']['wiki_message'])
             else:
                 st.write("Guest summary not found.")
                 #st.write(podcast_info)  # Debugging: Print the content of the variable
